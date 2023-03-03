@@ -9,8 +9,8 @@ steps:
     title: Cloning main repository...
     stage: prepare
     type: git-clone
-    repo: 'codefresh-contrib/spring-boot-2-sample-app'
-    revision: master
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
   run_unit_tests:
     title: Compile/Unit test
     stage: test
