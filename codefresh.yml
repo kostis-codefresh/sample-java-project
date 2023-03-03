@@ -22,6 +22,7 @@ steps:
     type: build
     stage: build
     image_name: spring-boot-2-sample-app
+    disable_push: true
     working_directory: ./
     tag: 'multi-stage'
     dockerfile: Dockerfile
