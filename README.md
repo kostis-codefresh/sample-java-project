@@ -31,13 +31,6 @@ mvn spring-boot:run
 mvn verify
 ```
 
-## To create a docker image packaging an existing jar
-
-```
-mvn package
-docker build -t my-spring-boot-sample . -f Dockerfile.only-package
-```
-
 ## Create a multi-stage docker image
 
 To compile and package using Docker multi-stage builds
